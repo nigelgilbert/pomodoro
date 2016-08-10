@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Pomodoro Timer</h1>
+    <h2 id="timer"></h2>
+  
+    <div id="timer-mode-select">
+      <button id="pomodoro" onclick="timer.pomodoro()"></button>
+      <button id="short-break" onclick="timer.shortBreak()"></button>
+      <button id="long-break" onclick="timer.longBreak()"></button>
+    </div>
+
+    <div id="timer-controls">
+      <button id="start" onclick="timer.start()"></button>
+      <button id="end" onclick="timer.end()"></button>
+      <button id="reset" onclick="timer.reset()"</button>
+    </div>
+
+  </body>
+
+  <script>
+    // You can also require other files to run in this process.
+    // This brings in the timer module and assigns it to the variable "timer".
+    var timer = require('./src/timer.js')
+  </script>
+</html>
