@@ -7,7 +7,7 @@ var mode = ""; // "pomodoro" || "short-break" || "long-break"
 
 module.exports.start = function() {
   console.log('start()');
-  // - check if remainingTime is not null.
+  // - check if remainingTime is not zero.
   // - if it is null, end function. else, execute the rest of the function.
   // - set isRunning to true
   // - begin the interval, which decrements the remaining by 1 each second.
