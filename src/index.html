@@ -7,17 +7,17 @@
   <body>
     <h1>Pomodoro Timer</h1>
     <h2 id="timer"></h2>
-  
+
     <div id="timer-mode-select">
-      <button id="pomodoro" onclick="timer.pomodoro()"></button>
-      <button id="short-break" onclick="timer.shortBreak()"></button>
-      <button id="long-break" onclick="timer.longBreak()"></button>
+      <button id="pomodoro" onclick="timer.pomodoro()">pomodoro</button>
+      <button id="short-break" onclick="timer.shortBreak()">short break</button>
+      <button id="long-break" onclick="timer.longBreak()">long break</button>
     </div>
 
     <div id="timer-controls">
-      <button id="start" onclick="timer.start()"></button>
-      <button id="end" onclick="timer.end()"></button>
-      <button id="reset" onclick="timer.reset()"</button>
+      <button id="start" onclick="timer.start()">start</button>
+      <button id="stop" onclick="timer.stop()">stop</button>
+      <button id="reset" onclick="timer.reset()">reset</button>
     </div>
 
   </body>
@@ -25,6 +25,7 @@
   <script>
     // You can also require other files to run in this process.
     // This brings in the timer module and assigns it to the variable "timer".
-    var timer = require('./src/timer.js')
+    var timer = require('./timer.js');
+    timer.writeTimeToHtml();
   </script>
 </html>
